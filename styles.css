@@ -1,23 +1,58 @@
+:root {
+  --pale-azure: #97dffcff;
+  --tropical-indigo: #858ae3ff;
+  --iris: #613dc1ff;
+  --indigo: #4e148cff;
+  --russian-violet: #2c0735ff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    margin-right: 10px;
-    text-decoration: none;
-  }
-  
+  background-color: var(--pale-azure);
+  color: var(--russian-violet);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background-color: var(--tropical-indigo);
+  color: var(--pale-azure);
+}
+
+main {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  margin-top: 70px;
+}
+
+input[type="file"] {
+  color: var(--russian-violet);
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--iris);
+  border: none;
+  color: var(--pale-azure);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--indigo);
+}
